@@ -53,6 +53,7 @@ address {
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 .section {
@@ -301,13 +302,20 @@ h1 {
 
 /* PORTFOLIO */
 
-/* .portfolio {}
+.portfolio .container {
+  margin-top: 94px;
+}
 
-.buttons-list {}
-
-.buttons-item {} */
+.buttons-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
 
 .portfolio-button {
+  display: inline-block;
   background: var(--buttons-color);
   border-radius: 4px;
   font-family: inherit;
@@ -315,6 +323,8 @@ h1 {
   font-size: 16px;
   line-height: calc(26 / 16);
   text-align: center;
+  padding: 6px 22px;
+  border: none;
 }
 
 .portfolio-button:hover,
@@ -323,18 +333,28 @@ h1 {
   color: var(--bg-color-main);
 }
 
-/* .portfolio-list {}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 94px;
+}
 
-.portfolio-item {} */
+.portfolio-item {
+  flex-basis: calc((100% - 60px) / 3);
+  border: 1px solid #eeeeee;
+}
 
 .portfolio-title {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
+  padding: 20px 0 4px 24px;
 }
 
 .portfolio-text {
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--text-color);
+  padding: 0 24px 20px;
 }
